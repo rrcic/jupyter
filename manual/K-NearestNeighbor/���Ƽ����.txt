@@ -1,0 +1,5 @@
+K-Nearest Neighbor Algorithm（KNN Algorithm）
+
+KNN (K-Nearest Neighbor) is one of the simplest machine learning algorithms that can be used for classification and regression.It is a supervised learning algorithm. 
+The idea is that if most of the K most similar samples in the feature space (that is, the closest neighbors in the feature space) belong to a certain category, the sample also belongs to this category. 
+That is to say, in the classification decision, this method only decides the class to which the sample to be classified belongs according to the class of the nearest one or several samples.

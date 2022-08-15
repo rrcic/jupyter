@@ -1,0 +1,3 @@
+Bayesian experiment
+brief introduction： 
+In this experiment, you can understand the basic principle of Bayesian formula, and be familiar with the use of Bayesian model in sklearn through two examples. At the end of the experiment, you can complete an exercise by yourself to strengthen the understanding and use of the model.
