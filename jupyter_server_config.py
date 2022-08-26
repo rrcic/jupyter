@@ -21,9 +21,9 @@ c.ServerApp.tornado_settings = {
 }
 
 # password:jupyter
-# c.ServerApp.password = u'argon2:$argon2id$v=19$m=10240,t=10,p=8$w9kYb4Hs9c3rrnyIf3cTIg$fR7mnOrBP8+gJA4fKAv8N7AMheAaiAWVGXNM6BVhFnM'
-c.ServerApp.passwork = ''
-c.ServerApp.token = ''
+c.ServerApp.password = u'argon2:$argon2id$v=19$m=10240,t=10,p=8$w9kYb4Hs9c3rrnyIf3cTIg$fR7mnOrBP8+gJA4fKAv8N7AMheAaiAWVGXNM6BVhFnM'
+# c.ServerApp.passwork = ''
+# c.ServerApp.token = ''
 
 # https://github.com/jupyter/notebook/issues/3130
 c.FileContentsManager.delete_to_trash = False
