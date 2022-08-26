@@ -12,10 +12,8 @@ c.ServerApp.ip = "0.0.0.0"
 c.ServerApp.port = 8888
 c.ServerApp.open_browser = False
 
-random_path = os.getenv('RANDOM_PATH')
-c.ServerApp.base_url = random_path
-# docker health check
-os.environ['JUPYTERHUB_SERVICE_PREFIX'] = random_path
+# docker health check demands that base_url equals JUPYTERHUB_SERVICE_PREFIX
+c.ServerApp.base_url = os.getenv('JUPYTERHUB_SERVICE_PREFIX')
 
 # iframe
 c.ServerApp.tornado_settings = { 
