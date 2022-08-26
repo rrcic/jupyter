@@ -11,7 +11,11 @@ c = get_config()  # noqa: F821
 c.ServerApp.ip = "0.0.0.0"
 c.ServerApp.port = 8888
 c.ServerApp.open_browser = False
-c.ServerApp.base_url = os.getenv('RANDOM_PATH')
+
+random_path = os.getenv('RANDOM_PATH')
+c.ServerApp.base_url = random_path
+# docker health check
+os.envirom['JUPYTERHUB_SERVICE_PREFIX'] = random_path
 
 # iframe
 c.ServerApp.tornado_settings = { 
