@@ -15,7 +15,7 @@ c.ServerApp.open_browser = False
 random_path = os.getenv('RANDOM_PATH')
 c.ServerApp.base_url = random_path
 # docker health check
-os.envirom['JUPYTERHUB_SERVICE_PREFIX'] = random_path
+os.environ['JUPYTERHUB_SERVICE_PREFIX'] = random_path
 
 # iframe
 c.ServerApp.tornado_settings = { 
