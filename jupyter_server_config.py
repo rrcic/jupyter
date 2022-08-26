@@ -11,7 +11,7 @@ c = get_config()  # noqa: F821
 c.ServerApp.ip = "0.0.0.0"
 c.ServerApp.port = 8888
 c.ServerApp.open_browser = False
-c.ServerApp.base_url = '/jupyter/'
+c.ServerApp.base_url = $PATH_PORT
 
 # iframe
 c.ServerApp.tornado_settings = { 
