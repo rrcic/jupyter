@@ -13,6 +13,7 @@ c.ServerApp.port = 8888
 c.ServerApp.open_browser = False
 
 # docker health check demands that base_url equals JUPYTERHUB_SERVICE_PREFIX
+# https://github.com/jupyter/docker-stacks/issues/1709
 c.ServerApp.base_url = os.getenv('JUPYTERHUB_SERVICE_PREFIX')
 
 # iframe
@@ -22,10 +23,12 @@ c.ServerApp.tornado_settings = {
     } 
 }
 
+# c.ServerApp.disable_check_xsrf = True
+
 # password:jupyter
-# c.ServerApp.password = u'argon2:$argon2id$v=19$m=10240,t=10,p=8$w9kYb4Hs9c3rrnyIf3cTIg$fR7mnOrBP8+gJA4fKAv8N7AMheAaiAWVGXNM6BVhFnM'
-c.ServerApp.passwork = ''
-c.ServerApp.token = ''
+c.ServerApp.password = u'argon2:$argon2id$v=19$m=10240,t=10,p=8$w9kYb4Hs9c3rrnyIf3cTIg$fR7mnOrBP8+gJA4fKAv8N7AMheAaiAWVGXNM6BVhFnM'
+# c.ServerApp.passwork = ''
+# c.ServerApp.token = ''
 
 # https://github.com/jupyter/notebook/issues/3130
 c.FileContentsManager.delete_to_trash = False
