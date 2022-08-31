@@ -23,6 +23,7 @@ c.ServerApp.tornado_settings = {
     } 
 }
 
+# https://github.com/nteract/hydrogen/issues/922
 c.ServerApp.disable_check_xsrf = True
 
 # password:jupyter
