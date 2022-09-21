@@ -14,7 +14,7 @@ c.ServerApp.open_browser = False
 
 # docker health check demands that base_url equals JUPYTERHUB_SERVICE_PREFIX
 # https://github.com/jupyter/docker-stacks/issues/1709
-c.ServerApp.base_url = os.getenv('JUPYTERHUB_SERVICE_PREFIX')
+# c.ServerApp.base_url = os.getenv('JUPYTERHUB_SERVICE_PREFIX')
 
 # iframe
 c.ServerApp.tornado_settings = { 
