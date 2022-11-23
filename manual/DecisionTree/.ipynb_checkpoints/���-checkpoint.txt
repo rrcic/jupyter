@@ -1,1 +1,0 @@
-Decision tree is a common classic machine learning algorithm. In this lab, you will learn the basic principles and simple applications of decision trees. There will also be an exercise at the end.

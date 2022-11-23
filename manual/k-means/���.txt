@@ -1,1 +1,0 @@
-The purpose of this lab is to learn What k-means clustering is and how to implement k-means clustering in Python.  
